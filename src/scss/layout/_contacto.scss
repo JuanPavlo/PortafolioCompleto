@@ -1,0 +1,67 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.contactame {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    top: 50%;
+    left: 50%;
+    @include m.tablet {
+        width: 550px;
+        padding: 50px;
+    }    
+    background: rgba(229, 220, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 10px auto 35px;
+    .formulario{
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: v.$negro;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 1rem;
+            border-bottom: 1px solid v.$negro;
+            background: v.$gris;
+        }
+        label {
+            top:0;
+            left: 0;
+            padding: 1rem 0;
+            color: v.$negro;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: start;
+        }
+        button {
+            padding: 2rem 7rem;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 56, 55);
+            border-radius: 1rem;
+            .btn {
+                display: inline-block;
+                width: auto; height: auto;
+                background-color: transparent;
+                margin: 0px 25px 15px;
+                min-width: 150px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        i {
+            font-size: 3em;
+            padding: 2rem;
+            color: v.$negro;
+        }
+    }
+    
+}

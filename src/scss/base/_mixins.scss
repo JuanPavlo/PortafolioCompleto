@@ -1,0 +1,46 @@
+@use "../base/variables" as v;
+
+//MEDIA QUERIES PARA RESPONSIVE
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width: v.$desktopXL) {
+        @content;
+
+    }
+}
+
+// DISPLAY GRID
+
+@mixin grid ($columnas: 2, $espaciado: 5rem) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+@mixin resetear-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+

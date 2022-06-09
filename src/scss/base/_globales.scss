@@ -1,0 +1,64 @@
+@use "variables" as v;
+
+html {
+    // habilitamos que un rem sea igual a 10px
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    //para que el padding no representen problemas de modificacion de ubicacion
+    box-sizing: inherit;
+}
+
+body {
+    background-color: v.$azul;
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem; // 16 pixeles
+    &.fijar-body {
+        overflow: hidden;
+    }
+}
+
+p {
+    font-family: v.$fuente_principal;
+    font-size: 2rem;
+    color: v.$negro;
+    line-height: 1.5;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    font-family: v.$fuente_principal;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: v.$fuente_secundaria;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

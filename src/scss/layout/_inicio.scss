@@ -1,0 +1,83 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.animacion {    
+    .imagen-ini {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .bienvenido {
+            position: absolute;
+            text-transform: uppercase;
+            z-index: 15;
+            color: v.$negro;
+            font-size: 3.5rem;
+            top: 5rem;
+        }
+        .square {
+            position: absolute;
+            width: 32rem;
+            height: 48rem;
+            background-color: v.$cafe;
+            opacity: 0.5;
+            top: 3rem;
+            z-index: 4;
+        }
+        .cicle-trans {
+            position: absolute;
+            width: 29rem;
+            height: 33rem;
+            border-radius: 50%;
+            border: solid 3rem v.$azul-oscuro;
+            opacity: 0.5;
+            top: 9rem;
+            z-index: 10;
+        }
+        .cicle {
+            position: absolute;
+            width: 23rem;
+            height: 27rem;
+            border-radius: 50%;
+            border: solid 1.5rem v.$blanco;
+            top: 12rem;
+            z-index: 20;
+        }
+        .foto-perfil {
+            position: absolute;
+            top: 13.4rem;
+            z-index: 19;
+        }
+        .foto-perfil img{
+            width: 20.2rem;
+            height: 24.2rem;
+            border-radius: 50%;
+        }
+        .foto-perfil source{
+            width: 20.2rem;
+            height: 20.2rem;
+            border-radius: 50%;
+        }
+        .texto-foto {
+            position: absolute;
+            font-size: 2rem;
+            color: v.$negro;
+            top: 44rem;
+            z-index: 22;
+        }
+        .texto-foto-2 {
+            position: absolute;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: v.$negro;
+            top: 48rem;
+            text-transform: uppercase;
+            z-index: 22;
+        }
+    }
+}
+
+
+
+
+

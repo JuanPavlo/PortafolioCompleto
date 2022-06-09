@@ -1,0 +1,33 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.perfil {
+    @include m.grid(1, 2rem);
+    @include m.telefono {
+        @include m.grid(2, 2rem);
+    }
+    img {
+        width: 20rem;
+        height: 26rem;
+        margin-bottom: 5rem;
+    }     
+    a {
+        background-color: v.$negro;
+        margin: 10rem;
+        color: v.$blanco;   
+        text-align: center; 
+        border-radius: 1rem;
+        border: solid 2rem v.$negro;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline 3px;   
+        }
+    }   
+}
+
+

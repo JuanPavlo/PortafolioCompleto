@@ -1,0 +1,61 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.proyectos {
+    margin-top: 60rem;
+    margin-bottom: 3rem;
+    .cuadro-proyecto {
+        // background: rgb(202,123,255);
+        // background: linear-gradient(90deg, rgba(202,123,255,1) 0%, rgba(255,110,110,1) 50%, rgba(255,199,120,1) 100%);
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        border-radius: 1rem;
+        h2 {
+            padding-top: 4rem;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        p {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        a {
+            color: v.$negro;
+            margin: 2rem;
+        }
+        i {
+            font-size: 1.6em;
+            margin-bottom: 2rem;
+        }
+    }
+    .seccion-proyectos h2 {
+        text-align: center;
+    }
+    .proyectos-grid {
+        @include m.grid(1, 3rem);
+        @include m.telefono {
+            @include m.grid(2, 3rem);
+        }
+        @include m.tablet {
+            @include m.grid(3, 3rem);
+        }
+        @include m.desktop {
+            @include m.grid(4, 3rem);
+        }
+        & img,
+        picture {
+            width: 100%;
+            border-radius: 1rem;
+            @include m.telefono {
+                transition: transform 0.4s ease;
+            }
+            &:hover {
+                @include m.telefono {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+

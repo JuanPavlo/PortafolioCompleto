@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <script src="https://kit.fontawesome.com/1bfe68c048.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Portafolio</h1>
+            <nav class="navegacion-principal">
+                <a href="#proyecto">Proyectos</a>
+                <a href="#competencia">Competencias</a>
+                <a href="#perfiles">Mi Perfil</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!-- <div class="imagen-inicio">
+        <picture class="bg-inicio">
+            <source srcset="build/img/bginicio.avif" type="image/avif">
+            <source srcset="build/img/bginicio.webp" type="image/webp">
+            <img lazy="loading" width="200" height="300" src="build/img/bginicio.jpg" alt="Foto de inicio">
+        </picture>
+    </div> -->
+    <div class="animacion">
+        <div class="imagen-ini">
+            <div class="bienvenido">
+                <h2>Bienvenidos</h2>
+            </div>
+            <div class="square"></div>
+            <div class="cicle-trans"></div>
+            <div class="cicle"></div>
+            <picture class="foto-perfil">
+                <source srcset="build/img/fotoperfil.avif" type="image/avif">
+                <source srcset="build/img/fotoperfil.webp" type="image/webp">
+                <img lazy="loading" width="200" height="300" src="build/img/fotoperfil.jpg" alt="Foto de perfil">
+            </picture>
+            <div class="texto-foto">
+                Juan Pablo Ahumada Avila.
+            </div>
+            <div class="texto-foto-2">
+                <span>Ingeniero de sistemas | desarrollador web.</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="proyecto" class="proyectos contenedor">
+        <div class="seccion-proyectos">
+            <h2><span>Portafolio |</span> Proyectos</h2>
+            <div class="proyectos-grid">
+                <div class="cuadro-proyecto">
+                    <picture class="foto-proyecto">
+                        <source srcset="build/img/proyecto1.avif" type="image/avif">
+                        <source srcset="build/img/proyecto1.webp" type="image/webp">
+                        <img lazy="loading" width="200" height="300" src="build/img/proyecto1.jpg" alt="Proyecto 1">
+                    </picture>
+                    <h2>Diseño Web Freelancer</h2>
+                    <p>Proyecto construido con HTML y CSS esta practica se realiza con flexbox y grid.</p>
+                    <center>
+                        <a href="https://github.com/JuanPavlo/ProyectoFreelancer" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://primerproyectoweb777.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </center>
+                </div>
+                <div class="cuadro-proyecto">
+                    <picture class="foto-proyecto">
+                        <source srcset="build/img/proyecto2.avif" type="image/avif">
+                        <source srcset="build/img/proyecto2.webp" type="image/webp">
+                        <img lazy="loading" width="200" height="300" src="build/img/proyecto2.jpg" alt="Proyecto 2">
+                    </picture>
+                    <h2>Front-End Store</h2>
+                    <p>Proyecto construido con HTML y CSS, se realizó el Front-End de una tienda de camisetas.</p>
+                    <center>
+                        <a href="https://github.com/JuanPavlo/TiendadeCamisetas" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://frontendsegundoproyecto.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </center>
+                </div>
+                <div class="cuadro-proyecto">
+                    <picture class="foto-proyecto">
+                        <source srcset="build/img/proyecto3.avif" type="image/avif">
+                        <source srcset="build/img/proyecto3.webp" type="image/webp">
+                        <img lazy="loading" width="200" height="300" src="build/img/proyecto3.jpg" alt="Proyecto 3">
+                    </picture>
+                    <h2>Blog de Café</h2>
+                    <p>Proyecto construido con HTML y CSS, se realizó un blog sobre café.</p>
+                    <center>
+                        <a href="https://github.com/JuanPavlo/BlogdeCafe" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://blogdecafe12315.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </center>
+                </div>
+                <div class="cuadro-proyecto">
+                    <picture class="foto-proyecto">
+                        <source srcset="build/img/proyecto4.avif" type="image/avif">
+                        <source srcset="build/img/proyecto4.webp" type="image/webp">
+                        <img lazy="loading" width="200" height="300" src="build/img/proyecto4.jpg" alt="Proyecto 4">
+                    </picture>
+                    <h2>Festival Musical</h2>
+                    <p>Proyecto construido con HTML, CSS, SASS, GULP y JavaScript, Se realizó una página de un festival musical.</p>
+                    <center>
+                        <a href="https://github.com/JuanPavlo/FestivalMusical" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://festivalmusicaldeploiment.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </center>
+                </div>
+                <div class="cuadro-proyecto">
+                    <picture class="foto-proyecto">
+                        <source srcset="build/img/proyecto5.avif" type="image/avif">
+                        <source srcset="build/img/proyecto5.webp" type="image/webp">
+                        <img lazy="loading" width="200" height="300" src="build/img/proyecto5.jpg" alt="Proyecto 5">
+                    </picture>
+                    <h2>Red Social</h2>
+                    <p>Proyecto construido con HTML, CSS y PHP, Se realizó una red social donde se puede agregar amigos, enviar mensajes, públicar artículos y modificar perfil.</p>
+                    <center>
+                        <a href="https://github.com/JuanPavlo/RedSocial" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </center>
+                </div>
+                <div class="cuadro-proyecto">
+                    <picture class="foto-proyecto">
+                        <source srcset="build/img/proyecto6.avif" type="image/avif">
+                        <source srcset="build/img/proyecto6.webp" type="image/webp">
+                        <img lazy="loading" width="200" height="300" src="build/img/proyecto6.jpg" alt="Proyecto 5">
+                    </picture>
+                    <h2>Portafolio Web</h2>
+                    <p>Proyecto construido con HTML, CSS, SASS, GULP y JavaScript, se realizó un portafolio personal.</p>
+                    <center>
+                        <a href="https://portafoliojuanpablo.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="competencia" class="competencias contenedor">
+        <div class="habilidades">
+            <div class="parte-conociminentos">
+                <h2>Conocimientos</h2>
+                <div class="conocimientos">
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logohtml.avif" type="image/avif">
+                            <source srcset="build/img/logohtml.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logohtml.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>HTML</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logocss.avif" type="image/avif">
+                            <source srcset="build/img/logocss.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logocss.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>CSS</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logojs.avif" type="image/avif">
+                            <source srcset="build/img/logojs.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logojs.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logosql.avif" type="image/avif">
+                            <source srcset="build/img/logosql.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logosql.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>SQL</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logophp.avif" type="image/avif">
+                            <source srcset="build/img/logophp.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logophp.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>PHP</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="parte-herramientas">
+                <h2>Herramientas</h2>
+                <div class="herramientas">
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logosass.avif" type="image/avif">
+                            <source srcset="build/img/logosass.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logosass.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>SASS</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logogulp.avif" type="image/avif">
+                            <source srcset="build/img/logogulp.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logogulp.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>GULP</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logonpm.avif" type="image/avif">
+                            <source srcset="build/img/logonpm.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logonpm.jpg" alt="Proyecto 5">
+                        </picture>  
+                        </center>
+                        <h3>NPM</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logogit.avif" type="image/avif">
+                            <source srcset="build/img/logogit.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logogit.jpg" alt="Proyecto 5">
+                        </picture> 
+                        </center>
+                        <h3>Git</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logogithub.avif" type="image/avif">
+                            <source srcset="build/img/logogithub.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logogithub.jpg" alt="Proyecto 5">
+                        </picture> 
+                        </center>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div>
+                        <center>
+                        <picture class="imagen-conocimiento">
+                            <source srcset="build/img/logovscode.avif" type="image/avif">
+                            <source srcset="build/img/logovscode.webp" type="image/webp">
+                            <img lazy="loading" width="200" height="300" src="build/img/logovscode.jpg" alt="Proyecto 5">
+                        </picture>
+                        </center>
+                        <h3>VS Code</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1>Mi nombre es <span>Juan Pablo</span> Ahumada Avila</h1>
+    <section id="perfiles" class="contenedor perfil">
+        <div class="informacion">
+            <p>Soy estudiante de Ingeniería de Sistemas de la Universidad de Cundinamarca, una persona con principios éticos y morales, tengo con gusto por el desarrollo web en su parte de front-end y back-end, estoy muy interesado por progresar y ser una persona de bien, me gusta realizar las labores con dedicación y buena actitud, siempre dispuesto a aprender nuevas cosas, me gusta ser organizado, responsable y puntual, soy una persona comprometida, me gusta esforzarme para hacer las cosas lo mejor posible, quiero estudiar para ser mejor persona y trabajador, al igual que tener la capacidad de poder ayudar lo más que pueda con mi conocimiento. </p>
+        </div>
+        <div class="link-img">
+            <center>
+                <img src="/build/img/fotohojadevida.jpg" alt="Hoja de Vida">
+                <a href="/build/word/HojaDeVidaJuanPabloAhumadaAvila.docx" download="HojaDeVidaJuanPabloAhumada.docx">Descargar CV</a>
+            </center>
+        </div><br><br>
+    </section>
+    <center>
+    <section id="contacto" class="contenedor contactame">
+        <h1>Contactame</h1>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form class="formulario" action="https://formspree.io/f/xwkyzoky" method="POST">
+            <label> 
+                Tu Correo:
+                <input type="email" name="email" required>
+            </label><br>
+            <label> 
+                Tu Mensaje:
+                <textarea name="message" required></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button class="btn" type="submit">
+                <span>Enviar</span>
+            </button><br><br><br>
+            <a href="https://github.com/JuanPavlo" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="www.linkedin.com/in/juan-pablo-ahumada-avila-00a7591a5" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://app.netlify.com/teams/jpahumada27/overview" target="_blank"> 
+                <i class="fa-solid fa-eye"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCggoQDXd432g4FmkPdm3-cQ/videos" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/avilajuanpabloahumada/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </form>
+    </section>
+    </center>
+    <footer class="site-footer">
+        <p>Derechos Reservados. Realizado por Juan Pablo Ahumada Avila 2022.</p>
+    </footer>
+    <script src="/build/js/app.js"></script>
+</body>
+</html>

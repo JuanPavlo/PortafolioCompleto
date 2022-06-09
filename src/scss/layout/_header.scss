@@ -1,0 +1,54 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header {
+    background: rgb(52,38,38);
+    background: linear-gradient(270deg, rgba(52,38,38,1) 0%, rgba(242,129,35,1) 100%);
+    @include m.tablet {
+        &.fijo {
+            left: 0;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            box-shadow: .3rem .3rem .4rem #212121;
+        }
+    }
+    h1 {
+        color: v.$blanco;
+        text-align: center;
+        @include m.tablet {
+            margin: 0; // se le quita la margen ya que los titulos tienen margen por defecto
+        }
+    }
+    .contenido-header {
+        padding: 2rem;
+        @include m.tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.navegacion-principal {
+    @include m.tablet {
+        display:flex;
+        gap: 3rem;
+    }
+    a {
+        display: block; // para que los enlaces se pongan de arriba hacia abajo
+        text-align: center;
+        color: v.$blanco;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include m.tablet {
+            margin: 0;
+        }
+        &:hover {
+            @include m.tablet {
+                border-bottom: v.$amarillo solid;
+            }
+            color: v.$amarillo;
+        }
+    }
+}

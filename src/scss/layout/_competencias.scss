@@ -1,0 +1,61 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.habilidades {
+    h2 {
+        text-align: center;
+        color: v.$negro;
+        margin-bottom: 9rem;
+    }
+    h3 {
+        background-color: v.$blanco;
+        text-align: center;
+        color: v.$negro;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 1.6rem;
+        width: 100%;
+        opacity: 0;
+        transform: translate(0px, -10rem);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+    .conocimientos>div:hover h3,
+    .herramientas>div:hover h3 {
+        opacity: 1;
+        transform: translate(0, -15rem);
+    }
+    picture,
+    img {
+        width: 12rem;
+        height: auto;
+    }
+    .conocimientos {
+        @include m.grid(2, 3rem);
+        justify-content: center;
+        @include m.telefono {
+            @include m.grid(3, 3rem);
+        }
+        @include m.tablet {
+            @include m.grid(4, 3rem);
+        }
+        @include m.desktop {
+            @include m.grid(5, 3rem);
+        }
+    }
+    .herramientas {
+        @include m.grid(2, 3rem);
+        justify-content: center;
+        @include m.telefono {
+            @include m.grid(3, 3rem);
+        }
+        @include m.tablet {
+            @include m.grid(4, 3rem);
+        }
+        @include m.desktop {
+            @include m.grid(5, 3rem);
+        }
+    }
+}
+
+
+
